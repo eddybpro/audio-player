@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+        <div class="head-container">
+            <div class="img-box">
+                <img src="assets/images/image_1.jpeg" alt="">
+                <div class="dot"></div>
+            </div>
+            <div class="audio-box">
+                <audio controls class="audio-tag" controlsList="nodownload noplaybackrate">
+                    <source  src="assets/audios/audio_1.mp3" type="audio/mpeg">
+                </audio>
+                <div class="audio-info">
+                    <p class="audio-name">audio 1</p>
+                    <div class="buttons">
+                        <button class="left"><i class="fa-solid fa-angles-left"></i></button>
+    
+                        <button class="right"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="down">
+                <button class="audios-btn"><i class="fa-sharp fa-solid fa-angle-down"></i></button>
+            </div>
+        </div>
+        
+
+        <div class="body-container"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
